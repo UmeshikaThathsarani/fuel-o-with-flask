@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Prediction.css';
+import { Modal, Button } from 'antd';
 import axios from 'axios';
 
 import { Radio } from 'antd';
@@ -30,9 +31,17 @@ class Prediction extends Component {
       headers: {
         'Content-Type': 'application/json'
       }})
-    .then(
-      res => alert(res.data)
-      );
+    .then(res => {
+      Modal.info({
+        title: 'Prediction Result',
+        content: (
+          <div>
+            <p>{res.data}</p>
+          </div>
+        ),
+        onOk() { }
+      });
+    });
   }
   
   handleInputChange1 = (event) =>{

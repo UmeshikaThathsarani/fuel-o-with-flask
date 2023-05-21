@@ -1,16 +1,16 @@
 import React from 'react';
 import {
-//   CalculatorFilled,
-  HomeFilled,
-  FundOutlined
-//   QuestionCircleFilled
+  HistoryOutlined,
+  HomeOutlined,
+  FundOutlined,
+  CarOutlined
 } from '@ant-design/icons';
 
 export const ICONS = {
-  home: <HomeFilled />,
-  prediction: <FundOutlined />
-//   calc: <CalculatorFilled />,
-//   question: <QuestionCircleFilled />,
+  home: <HomeOutlined />,
+  prediction: <FundOutlined />,
+  history: <HistoryOutlined />,
+  rent: <CarOutlined />
 };
 
 export const PAGES = [
@@ -25,17 +25,17 @@ export const PAGES = [
     name: 'Prediction',
     path: '/prediction',
     icon: ICONS.prediction,
-//   },
-//   {
-//     id: 3,
-//     name: 'BMI Calculator',
-//     path: '/calculator',
-//     icon: ICONS.calc,
-//   },
-//   {
-//     id: 4,
-//     name: 'Healthcare Center',
-//     path: '/healthcare',
-//     icon: ICONS.healthcare,
+  },
+  {
+    id: 3,
+    name: 'Activity History',
+    path: '/history',
+    icon: ICONS.history,
+  },
+  {
+    id: 4,
+    name: 'Rent A Car',
+    path: '/rent',
+    icon: ICONS.rent,
   }
 ];

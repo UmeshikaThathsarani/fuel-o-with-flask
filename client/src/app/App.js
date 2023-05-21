@@ -4,8 +4,8 @@ import { Layout } from 'antd';
 
 import Home from './pages/home/Home';
 import Prediction from './pages/prediction/Prediction';
-// import BMI from './pages/BMI/BMI';
-// import Healthcare from './pages/Healthcare/Healthcare';
+import History from './pages/history/History';
+import Rent from './pages/rent/Rent';
 
 import AppNavBar from './components/appNavBar/AppNavBar';
 
@@ -28,8 +28,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/prediction" element={<Prediction />} />
-            {/* <Route path="/calculator" element={<BMI />} />
-            <Route path="/healthcare" element={<Healthcare />} /> */}
+            <Route path="/history" element={<History />} />
+            <Route path="/rent" element={<Rent />} />
           </Routes>
         </Content>
         <AppFooter/>
