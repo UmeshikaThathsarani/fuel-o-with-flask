@@ -27,7 +27,7 @@ class Prediction extends Component {
     event.preventDefault()
     console.log(this.state)
     axios
-    .post("http://localhost:5000/predict",this.state,{
+    .post("https://fuelo.app/api/predict",this.state,{
       headers: {
         'Content-Type': 'application/json'
       }})
