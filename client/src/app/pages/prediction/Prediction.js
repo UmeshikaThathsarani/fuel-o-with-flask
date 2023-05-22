@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Prediction.css';
-import { Modal, Button } from 'antd';
+import { Modal, Button, Select } from 'antd';
 import axios from 'axios';
 
 import { Radio } from 'antd';
@@ -136,9 +136,20 @@ class Prediction extends Component {
                     <div className="input-divs" >
                       <h3>2. Vehicle Brand
                         <span>
-                          <input style={{marginLeft:"2%", float:"right", width:"200px"}} type="text" required
+                          <select style={{marginLeft:"2%", float:"right", width:"200px"}} required
                           id="make" name="make" onChange={this.handleInputChange2}
-                          value={make} />
+                          value={make}>
+                            <option>AM General</option>
+                            <option>American Motors Corporation</option>
+                            <option>Buick</option>
+                            <option>Cadillac</option>
+                            <option>Chevrolet</option>
+                            <option>Dodge</option>
+                            <option>Ford</option>
+                            <option>GMC</option>
+                            <option>Grumman Olson</option>
+                            <option>Isuzu</option>
+                          </select>
                         </span>
                       </h3>
                     </div>
@@ -146,9 +157,20 @@ class Prediction extends Component {
                     <div className="input-divs" >
                       <h3>3. Vehicle Class
                           <span>
-                              <input style={{marginLeft:"2%", float:"right", width:"200px"}} type="text" required
+                              <select style={{marginLeft:"2%", float:"right", width:"200px"}} required
                               id="_class" name="_class" onChange={this.handleInputChange3}
-                              value={_class}/>
+                              value={_class}>
+                                <option>Special Purpose Vehicle 2WD</option>
+                                <option>Special Purpose Vehicle 4WD</option>
+                                <option>Large Cars</option>
+                                <option>Standard Pickup Trucks 2WD</option>
+                                <option>Standard Pickup Trucks 4WD</option>
+                                <option>Vans, Passenger Type</option>
+                                <option>Vans, Cargo Type</option>8
+                                <option>Small Pickup Trucks 2WD</option>
+                                <option>Small Pickup Trucks 4WD</option>
+                                <option>Minicompact Cars</option>
+                              </select>
                           </span>
                         </h3>
                     </div>
@@ -156,9 +178,17 @@ class Prediction extends Component {
                     <div className="input-divs" >
                       <h3>4. Drive
                           <span>
-                              <input style={{marginLeft:"2%", float:"right", width:"200px"}} type="text" required
+                              <select style={{marginLeft:"2%", float:"right", width:"200px"}} required
                               id="drive" name="drive" onChange={this.handleInputChange4}
-                              value={drive}/>
+                              value={drive}>
+                                <option>2-Wheel Drive</option>
+                                <option>4-Wheel or All-Wheel Drive</option>
+                                <option>Rear-Wheel Drive</option>
+                                <option>4-Wheel Drive</option>
+                                <option>All-Wheel Drive</option>
+                                <option>Front-Wheel Drive</option>
+                                <option>Part-time 4-Wheel Drive</option>
+                              </select>
                           </span>
                         </h3>
                     </div>
@@ -166,9 +196,20 @@ class Prediction extends Component {
                     <div className="input-divs" >
                       <h3>5. Transmission
                           <span>
-                              <input style={{marginLeft:"2%", float:"right", width:"200px"}} type="text" required
+                              <select style={{marginLeft:"2%", float:"right", width:"200px"}} required
                               id="transmission" name="transmission" onChange={this.handleInputChange5}
-                              value={transmission}/>
+                              value={transmission}>
+                                <option>Automatic 3-Speed</option>
+                                <option>Automatic 4-Speed</option> 
+                                <option>Automatic 5-Speed</option>
+                                <option>Automatic 6-Speed</option>
+                                <option>Automatic 7-Speed</option>
+                                <option>Automatic 8-Speed</option>
+                                <option>Automatic 9-Speed</option>
+                                <option>Manual 3-Speed</option>
+                                <option>Manual 4-Speed</option>
+                                <option>Manual 5-Speed</option>                                                             
+                              </select>
                           </span>
                         </h3>
                     </div>
@@ -202,9 +243,17 @@ class Prediction extends Component {
                     <div className="input-divs" >
                       <h3>9. Fuel Type
                         <span>
-                          <input style={{marginLeft:"2%", float:"right", width:"200px"}} type="text" required
+                          <select style={{marginLeft:"2%", float:"right", width:"200px"}} required
                           id="fuelType" name="fuelType" onChange={this.handleInputChange9}
-                          value={fuelType}/>
+                          value={fuelType}>
+                            <option>Diesel</option>
+                            <option>E85</option>
+                            <option>Midgrade Gasoline</option>
+                            <option>Natural Gas</option>
+                            <option>Premium Gasoline</option>
+                            <option>Propane</option>
+                            <option>Regular Gasoline</option>                            
+                          </select>
                         </span>
                       </h3>
                     </div>
