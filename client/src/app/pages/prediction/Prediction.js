@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Prediction.css';
-import { Modal, Button, Select } from 'antd';
+import { Modal } from 'antd';
 import axios from 'axios';
 
 import { Radio } from 'antd';
@@ -139,6 +139,7 @@ class Prediction extends Component {
                           <select style={{marginLeft:"2%", float:"right", width:"200px"}} required
                           id="make" name="make" onChange={this.handleInputChange2}
                           value={make}>
+                            <option></option>
                             <option>AM General</option>
                             <option>American Motors Corporation</option>
                             <option>Buick</option>
@@ -160,6 +161,7 @@ class Prediction extends Component {
                               <select style={{marginLeft:"2%", float:"right", width:"200px"}} required
                               id="_class" name="_class" onChange={this.handleInputChange3}
                               value={_class}>
+                                <option></option>
                                 <option>Special Purpose Vehicle 2WD</option>
                                 <option>Special Purpose Vehicle 4WD</option>
                                 <option>Large Cars</option>
@@ -181,6 +183,7 @@ class Prediction extends Component {
                               <select style={{marginLeft:"2%", float:"right", width:"200px"}} required
                               id="drive" name="drive" onChange={this.handleInputChange4}
                               value={drive}>
+                                <option></option>
                                 <option>2-Wheel Drive</option>
                                 <option>4-Wheel or All-Wheel Drive</option>
                                 <option>Rear-Wheel Drive</option>
@@ -199,6 +202,7 @@ class Prediction extends Component {
                               <select style={{marginLeft:"2%", float:"right", width:"200px"}} required
                               id="transmission" name="transmission" onChange={this.handleInputChange5}
                               value={transmission}>
+                                <option></option>
                                 <option>Automatic 3-Speed</option>
                                 <option>Automatic 4-Speed</option> 
                                 <option>Automatic 5-Speed</option>
@@ -226,7 +230,7 @@ class Prediction extends Component {
 
                     <h3>7. Is Turbocharger In Use 
                     <div className="radio-divs">
-                      <Radio.Group onChange={this.handleInputChange7} value={turbocharger}>
+                      <Radio.Group onChange={this.handleInputChange7} value={turbocharger} required>
                           <Radio id="turbocharger_yes" value={1} name="turbocharger">Yes</Radio>
                           <Radio id="turbocharger_no" value={0} name="turbocharger">No</Radio>
                       </Radio.Group>
@@ -234,7 +238,7 @@ class Prediction extends Component {
 
                     <h3>8. Is Supercharger In Use 
                     <div className="radio-divs">
-                      <Radio.Group onChange={this.handleInputChange8} value={supercharger}>
+                      <Radio.Group onChange={this.handleInputChange8} value={supercharger} required>
                           <Radio id="supercharger_yes" value={1} name="supercharger">Yes</Radio>
                           <Radio id="supercharger_no" value={0} name="supercharger">No</Radio>
                       </Radio.Group>
@@ -246,6 +250,7 @@ class Prediction extends Component {
                           <select style={{marginLeft:"2%", float:"right", width:"200px"}} required
                           id="fuelType" name="fuelType" onChange={this.handleInputChange9}
                           value={fuelType}>
+                            <option></option>
                             <option>Diesel</option>
                             <option>E85</option>
                             <option>Midgrade Gasoline</option>
@@ -260,9 +265,9 @@ class Prediction extends Component {
 
                   </div>
 
-                <div className="container-predict-submit">
-                  <input type="submit" value="Submit" />
-                </div>
+                  <div className="container-predict-submit">
+                    <input type="submit" value="Submit" />
+                  </div>
 
             </form>
         </div>
