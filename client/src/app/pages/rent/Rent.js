@@ -34,7 +34,7 @@ function Rent() {
               hoverable
               style={{ width: "100%" }}
               cover={
-              <img style={{height: "230px", width: "350px", overflow: "hidden" }} alt="ShaGaTransport" src="https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/331057093_544313354461617_4233519779338726362_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFU5mX45dRzUJpFy09CD0MEO3h2L5NYaAE7eHYvk1hoAdybpV57CBaTGNiiiSyavPkXJzXbx4cbxaiA0LEYOzG_&_nc_ohc=1cEWAmF5G40AX8WfQFf&_nc_ht=scontent-ord5-1.xx&oh=00_AfA6IKj-unQFnTfazvFa1XibkWPF1AGFxo105RjFrzT1wQ&oe=64702847" />}
+              <img style={{height: "230px", width: "350px", overflow: "hidden" }} alt="ShaGaTransport" src="https://d8asu6slkrh4m.cloudfront.net/2015/01/longterm.jpg" />}
               >
               <Meta title="ShaGa Transport - Galle" description={
                 <p>
