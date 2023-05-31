@@ -22,7 +22,6 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 .container-predict-submit input{
   background-color: #648381;
   width: fit-content;
@@ -33,7 +32,9 @@
   border-radius: 32px;
   border: 1px solid transparent;
 }
-
+.container-predict-submit input[type="submit"]:active {
+  background-color: #1677ff;
+}
 .container-predict-output{
   width: 50%;
   background-image: url('../../images/pic_2.jpg');
