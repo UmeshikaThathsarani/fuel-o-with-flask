@@ -36,7 +36,7 @@ class Prediction extends Component {
         title: 'Prediction Result',
         content: (
           <div>
-            <p>{res.data}</p>
+            <p style={{ whiteSpace: 'pre-line' }}>{res.data}</p>
           </div>
         ),
         onOk() { }
